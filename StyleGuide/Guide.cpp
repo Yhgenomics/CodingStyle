@@ -95,6 +95,7 @@ namespace StyleGuide
 
         // conditions
         bool condition = true;
+        
         if ( condition )
         {
             // do something
@@ -109,6 +110,7 @@ namespace StyleGuide
         }
 
         int conditionTest = 1;
+        
         if ( 0 == conditionTest )
         {
 
