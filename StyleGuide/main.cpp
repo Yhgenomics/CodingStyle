@@ -8,8 +8,8 @@
 * Creator       : Ke Yang(keyang@yhgenomics.com)
 * Date          : 2016/2/16
 * Modifed       : When      | Who       | What
-2016/2/17 | Ke Yang   | Add function A
-2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
+                  2016/2/17 | Ke Yang   | Add function A
+                  2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
 #include "Guide.h"
