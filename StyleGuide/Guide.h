@@ -116,7 +116,7 @@ namespace StyleGuide
         // @remark  : always check the output flag
         bool    LightSpeed( MyInt inputOne)     { light_speed = inputOne; }
 
-        //[question] on the use ini of smart pointer
+        // Use smart pointer
         // Getter for ...        
         // @remark  : ....
         unique_ptr<int> PointerTest()

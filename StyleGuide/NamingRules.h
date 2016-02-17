@@ -28,7 +28,7 @@ limitations under the License.
                   2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
-// Nmaing rules[question]
+// Nmaing rules
 // @General rules   : no abbreviate 
 // @File name       : FileName.h FileName.cpp
 // @Type name       : class TypeName
