@@ -1,19 +1,31 @@
-//line 85 letters most
+//at most 85 letters per line 
 /***********************************************************************************
-* This file is part of Project ***
+This file is part of Project ***
 (brief description on the Project)
-* For the latest info, see  WEBSITE_ADDRESS
-* Copyright (c) 2015 Yhgenomics. All rights reserved.
-* [license begin here] [question]Choose one.
+For the latest info, see  WEBSITE_ADDRESS
+
+Copyright 2016 Yhgenomics
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 ***********************************************************************************/
 
 /***********************************************************************************
-* Description   : overview
+* Description   : overview of this file
 * Creator       : Ke Yang(keyang@yhgenomics.com)
 * Date          : 2016/2/16
 * Modifed       : When      | Who       | What
-2016/2/17 | Ke Yang   | Add function A
-2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
+                  2016/2/17 | Ke Yang   | Add function A
+                  2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
 // Order of includes
@@ -70,7 +82,7 @@ namespace StyleGuide
         vector< int > localVector = { 1, 2, 3, 4, 5 };
 
         // Description on i if it's not simple
-        for ( int i = 0; i < localVarialbes; ++i )
+        for ( int i = 0; i < localInt; ++i )
         {
             if ( 0 == i % 2 )
             {
