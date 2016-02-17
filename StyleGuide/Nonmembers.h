@@ -16,7 +16,7 @@
 2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
-#ifndef NONMEMBERS_H_ // [question] or the <PROJECT>_<PATH>_<FILE>_H_
+#ifndef NONMEMBERS_H_ // <FILE>_H_
 #define NONMEMBERS_H_
 
 // Order of includes
@@ -27,23 +27,10 @@
 // 4. Your project's .h
 #include <iostream>
 
-// no direct using namespace [question] or except std
+// no direct using namespace 
 using std::cin;
 using std::cout;
 
-//[question] Prefer placing nonmember functions in a namespace
-namespace StyleGuide
-{
-    namespace GeneralMath
-    {
-        // Description
-        void add();
+// Do not use the nonmember functions.
 
-        // Use trailing return types only where using the ordinary syntax 
-        // (leading return types) is impractical or much less readable.
-        template <class T , class U> auto add( T t , U u ) -> decltype( t + u );
-    }
-
-}
-
-#endif // !GUIDE_H_
+#endif // !NONMEMBERS_H_

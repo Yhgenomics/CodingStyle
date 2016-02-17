@@ -21,8 +21,9 @@
 // @File name       : FileName.h FileName.cpp
 // @Type name       : class TypeName
 // @Common Variable : int variableNames , int variable
-// @Data Member     : int data_member, int data
-// @Const Name      : const int kConstInt
+// @Data Member     : int data_member_ , int data_ (no directly access, must via getter/setter)
+// @Const Name      : const int kConstInt 
+// @Enum member     : (must be accessed by fullpath PATH::ConstInt)
 // @Function        : int GoodFuntion( int inputOne, double input Two );
 // @Namespace       : namespace GuideBook
 // @Marco           : #define MARCO_NAME

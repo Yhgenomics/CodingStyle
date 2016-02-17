@@ -51,19 +51,20 @@ namespace StyleGuide
     int StyleGuide::ClassStyle::CallFunction( int inputOne )
     {
         // meaning of the local variables
-        int localVarialbes = inputOne + 1;
+        int     localInt    = inputOne + 1;
 
         // use 0 for integers,
-        int zeroInt = 0;
+        int     zeroInt     = 0;
 
         // 0.0 for reals
-        double zerodouble = 0.0;
+        double  zerodouble  = 0.0;
 
         // nullptr (or NULL) for pointers
-        int* nullPointer = nullptr;
+        int*    nullPointer = nullptr;
+        double* test        = nullptr;
 
         // and '\0' for chars.
-        char EmptryString[ 2 ] = { '\0', '\0' };
+        char    Str1[ 2 ]   = { '\0', '\0' };
 
         // ues braced initializer list
         vector< int > localVector = { 1, 2, 3, 4, 5 };
@@ -81,18 +82,12 @@ namespace StyleGuide
         for ( auto item : localVector )
         {
             // do something with item 
-            // [question] no add or delete on item
+            // no add or delete on item
         }
 
         // Important Description if needed
         for ( auto const& item : localVector )
         {
-            //[question] todo comment format
-            // [TODO]
-            // @role 
-            // @deadline
-            // @issue
-            // such as:
             // [TODO]
             // @role    : Test Group
             // @deadline: 2016/2/18
@@ -102,6 +97,7 @@ namespace StyleGuide
         // conditions
         bool condition = true;
         
+        // Important Description if needed
         if ( condition )
         {
             // do something
@@ -117,14 +113,13 @@ namespace StyleGuide
 
         int conditionTest = 1;
         
+        // Important Description if needed
         if ( 0 == conditionTest )
         {
 
         }
 
-        // [question]Switch only for simple stable functions
-        // other wise refactor with state or strategy pattern
-        // or just put them into a map< conditions, actions >
+        // Important Description if needed
         switch ( conditionTest )
         {
             case 0:

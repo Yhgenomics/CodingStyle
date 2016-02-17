@@ -16,7 +16,7 @@
                   2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
-#ifndef GUIDE_H_ // [question] or the <PROJECT>_<PATH>_<FILE>_H_
+#ifndef GUIDE_H_ 
 #define GUIDE_H_
 
 // Order of includes
@@ -31,7 +31,7 @@
 #include <memory>
 #include "Nonmembers.h"
 
-// no direct using namespace [question] or except std
+// no direct using namespace
 // do use aliases
 using std::cin;
 using std::cout;

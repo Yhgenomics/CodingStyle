@@ -18,6 +18,10 @@
 
 #include "Guide.h"
 
+// Use trailing return types only where using the ordinary syntax 
+// (leading return types) is impractical or much less readable.
+template <class T , class U> auto add( T t , U u ) -> decltype( t + u );
+
 // This guide is based on the google c++ style guide
 int main()
 {
