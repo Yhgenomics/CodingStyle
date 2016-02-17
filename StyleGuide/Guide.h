@@ -1,9 +1,13 @@
-//search [question] for discussion points
-//[question] line 85 letters most
+//line 85 letters most
+/***********************************************************************************
+* This file is part of Project ***
+    (brief description on the Project)
+* For the latest info, see  WEBSITE_ADDRESS
+* Copyright (c) 2015 Yhgenomics. All rights reserved.
+* [license begin here] [question]Choose one.
+***********************************************************************************/
 
 /***********************************************************************************
-[question] Every file should contain license boilerplate, choose one.
-* Copyright (c) 2015 Yhgenomics. All rights reserved.
 * Description   : overview
 * Creator       : Ke Yang(keyang@yhgenomics.com)
 * Date          : 2016/2/16
@@ -39,7 +43,6 @@ using MyInt       = int;
 
 namespace StyleGuide
 {
-    // [question] new line for each title or not
     // @Description : (What is this class? It's function)
     //                (important base knowledges such as)
     //                F = m*a               
@@ -68,7 +71,7 @@ namespace StyleGuide
         // @param   : inputTwo stands for...
         // @output  : none
         // @example : how to use it             
-        //[question] use explicit will avoid both implicit conversions and C++11's list initialization syntax 
+        // use explicit will avoid both implicit conversions and C++11's list initialization syntax 
         //           the function:
         //              void Function( ClassStyle );
         //           will not work with this call:   
@@ -125,7 +128,7 @@ namespace StyleGuide
         // @param   : meaning
         // @output  : exit code
         // @example : how to use it
-        // [question] parameter order is: inputs, then outputs.     
+        // parameter order is: inputs, then outputs.     
         int     CallFunction( int intputOne );
 
     protected:
@@ -133,7 +136,6 @@ namespace StyleGuide
     private:
 
         //Description
-        //[question]Naming rules about function member;
         function< MyInt( bool testFlag ) > SomeFunction;
 
         // Description

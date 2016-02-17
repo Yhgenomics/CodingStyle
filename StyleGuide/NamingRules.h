@@ -1,15 +1,22 @@
+//line 85 letters most
 /***********************************************************************************
-Every file should contain license boilerplate, choose one.
+* This file is part of Project ***
+(brief description on the Project)
+* For the latest info, see  WEBSITE_ADDRESS
 * Copyright (c) 2015 Yhgenomics. All rights reserved.
+* [license begin here] [question]Choose one.
+***********************************************************************************/
+
+/***********************************************************************************
 * Description   : overview
 * Creator       : Ke Yang(keyang@yhgenomics.com)
 * Date          : 2016/2/16
 * Modifed       : When      | Who       | What
-                  2016/2/17 | Ke Yang   | Add function A
-                  2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
+2016/2/17 | Ke Yang   | Add function A
+2016/2/17 | Ke Yang   | Refactor the Class add new interfaces
 ***********************************************************************************/
 
-// Nmaing rules
+// Nmaing rules[question]
 // @General rules   : no abbreviate 
 // @File name       : FileName.h FileName.cpp
 // @Type name       : class TypeName
