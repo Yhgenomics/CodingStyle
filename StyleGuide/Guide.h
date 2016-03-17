@@ -79,61 +79,55 @@ namespace StyleGuide
     public:
         
         // Description this function is for
-        // @param   : inputOne stands for....
-        // @param   : inputTwo stands for...
-        // @output  : none
-        // @example : how to use it             
-        // use explicit will avoid both implicit conversions and C++11's list initialization syntax 
+        // @intpuOne : The first input
+        // @length   : The length for a tick
+        // @output   : none
+        // @example  : how to use it             
+        // use explicit will avoid both implicit conversions and C++11's list 
+        // initialization syntax 
         //           the function:
         //              void Function( ClassStyle );
         //           will not work with this call:   
-        //              Function( { 12, 34 } ); // error cause the explicit syntax         
-        explicit ClassStyle( int intpuOne, int inputTwo )
+        //              Function( { 12, 34 } ); // error cause the explicit syntax  
+        explicit ClassStyle( int intpuOne, int length )
         {
         }
 
         // Description this function is for
-        // @param   : inputOne stands for....
-        // @output  : none
-        // @example : how to use it     
+        // @intpuOne : inputOne stands for....
+        // @intpuTwo : inputTwo 
+        // @output   : none
+        // @example  : how to use it     
         void Init( int intpuOne , int inputTwo );
         
-        // Getter for ...        
-        // @remark  : ....
-        MyInt   SkyHeight()                     { return sky_height;      }
+        // Getter and Setter for ...        
+        // @note   : ....
+        MyInt SkyHeight()                       { return sky_height_;     }
+        bool SkyHeight( const MyInt& inputOne ) { sky_height_ = inputOne; }
 
-        // Setter for ...
-        // @param   : inputOne stands for....
-        // @remark  : ....
-        bool    SkyHeight( MyInt inputOne )     { sky_height = inputOne;  }
-
-        // Getter for ...        
-        // @remark  : ....
-        MyInt   LightSpeed()                    { return light_speed;     }
-
-        // Setter for ...
-        // @param   : inputOne stands for....
-        // @remark  : always check the output flag
-        bool    LightSpeed( MyInt inputOne)     { light_speed = inputOne; }
+        // Getter and Setter for ...        
+        // @note   : ....
+        MyInt LightSpeed()                      { return speed_;          }
+        bool LightSpeed( const MyInt& inputOne) { speed_ = inputOne;      }
 
         // Use smart pointer
         // Getter for ...        
-        // @remark  : ....
+        // @note  : ....
         unique_ptr<int> PointerTest()
         {
-            if ( nullptr == pointer_test )
+            if ( nullptr == pointer_test_ )
             {
                 unique_ptr<int> out( new int );
-                pointer_test = std::move( out );
+                pointer_test_ = std::move( out );
             }
-            return std::move( pointer_test );
+            return std::move( pointer_test_ );
         }
 
         // Setter for ...        
-        // @remark  : ....
+        // @note  : ....
         void PointerTest(unique_ptr<int> inputOne)
         {
-            pointer_test = std::move( inputOne );
+            pointer_test_ = std::move( inputOne );
         }
 
         // Description this function is for
@@ -141,7 +135,7 @@ namespace StyleGuide
         // @output  : exit code
         // @example : how to use it
         // parameter order is: inputs, then outputs.     
-        int     CallFunction( int intputOne );
+        int CallFunction( int intputOne );
 
     protected:
 
@@ -151,14 +145,14 @@ namespace StyleGuide
         function< MyInt( bool testFlag ) > SomeFunction;
 
         // Description
-        MyInt                   sky_height;
+        MyInt                   sky_height_;
         
         // Description
-        MyInt                   light_speed;
+        MyInt                   speed_;
 
         // refer to have single, fixed owners for dynamically allocated objects. 
         // Prefer to transfer ownership with smart pointers.
-        std::unique_ptr<int>    pointer_test;
+        std::unique_ptr<int>    pointer_test_;
 
     };
 }
